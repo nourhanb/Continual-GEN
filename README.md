@@ -1,12 +1,5 @@
-# ood-detection
-Out of distribution data points detection with contrastive learning and clustering in Python
-
-## Folder description
-- data: Contains the HAM dataset
-- ham: Class and functions for creating data loaders from HAM dataset
-- networks: Includes different resnet architectures to use, as well as Supcon and SimCLR models.
-- save: Saved models and history records after each model training.
-- test: A couple of notebooks for testing each part of the training files during the project development. You could use it or ignore it.
+# Continual-GEN
+This is the PyTorch implementation of our ISICW MICCAI 2023 paper (**Continual-GEN: Continual Group Ensembling for Domain-agnostic Skin Lesion Classification**).
 
 ## File description
 - baseline_training: Training algorithm of the cross-entropy baseline model.
@@ -22,13 +15,6 @@ All the necessary libraries are listed in the requirements.txt file. You will al
 - CUDA == 11.7
 - Cudnn == 8.5
 - Pytorch == 2.0.0
-For this you could create a conda enviroment and install the dependencies in the requirements file first.
-Then go to this page (https://pytorch.org/get-started/locally/) and get the command to put in the anaconda prompt to install cuda.
-
-Concerning about the data, you must create a "save" folder and download the HAM dataset from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
-Decompress the files and merge all skin images in a single "images" folder inside "save".
 
 ## References
 https://github.com/HobbitLong/SupContrast
-https://arxiv.org/pdf/2203.08549.pdf
-https://arxiv.org/pdf/2004.11362.pdf
