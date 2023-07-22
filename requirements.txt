@@ -1,0 +1,13 @@
+apex==0.9.10dev
+matplotlib==3.7.1
+numpy==1.23.5
+opencv_python==4.7.0.72
+pandas==2.0.1
+Pillow==9.5.0
+scikit_learn==1.2.2
+tensorboard_logger==0.1.0
+#torch==1.13.0
+torch==2.0.0
+#torchvision==0.14.0
+torchvision==0.15.1
+tqdm==4.65.0
