@@ -9,7 +9,7 @@ information about the domain identity during training and inference is unavailab
   <img src="overview.jpg" width="700">
 </p>
 
-## File description
+## File Description
 - baseline_training: Training algorithm of the cross-entropy baseline model.
 - constrastive_training: Includes both SupCon and SimCLR trainings, the desired one can be selected by changing --method argument.
 - contrastive_test: Evaluation of the contrastive models, calculating their global separation by class and k-means clusters.
