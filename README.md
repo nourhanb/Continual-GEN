@@ -1,6 +1,8 @@
 # Continual-GEN
 This is the PyTorch implementation of our ISICW MICCAI 2023 paper (**Continual-GEN: Continual Group Ensembling for Domain-agnostic Skin Lesion Classification**).
 
+![](overview.png)
+
 ## File description
 - baseline_training: Training algorithm of the cross-entropy baseline model.
 - constrastive_training: Includes both SupCon and SimCLR trainings, the desired one can be selected by changing --method argument.
