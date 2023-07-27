@@ -16,5 +16,23 @@ All the necessary libraries are listed in the requirements.txt file. You will al
 - Cudnn == 8.5
 - Pytorch == 2.0.0
 
+## Training and Evaluation
+Here you can find the command prompts used to run each training method. You can edit the hyperparameters here or inside the corresponding code file.
+
+Cross-Entropy baseline
+python baseline_training.py --batch_size 16 --learning_rate 0.001 --epochs 150 --trial 2
+
+SupCon
+python contrastive_training.py --batch_size 16 --learning_rate 0.001 --epochs 150 --temp 0.1 --trial 0
+
+SimCLR
+python contrastive_training.py --batch_size 16 --learning_rate 0.001 --epochs 150 --method SimCLR --temp 0.1 --trial 0
+
+Testing contrastive models
+python contrastive_test.py --method CE
+python contrastive_test.py --method SupCon
+python contrastive_test.py --method SimCLR
+#In method you choose between SimCLR or SupCon
+
 ## References
 https://github.com/HobbitLong/SupContrast
