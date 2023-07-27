@@ -32,3 +32,13 @@ Testing contrastive models
 
 ## References
 https://github.com/HobbitLong/SupContrast
+
+## Citation
+If you use this code in your research, please consider citing:
+```bash
+@inproceedings{bayasi2023continual-gen,
+title={{Continual-GEN}: Continual Group Ensembling for Domain-agnostic Skin Lesion Classification},
+author={Bayasi, Nourhan and Du, Siyi and Hamarneh, Ghassan and Garbi, Rafeef},
+booktitle={26th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2023) ISIC Workshop}}
+
+
