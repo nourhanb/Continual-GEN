@@ -1,7 +1,13 @@
 # Continual-GEN
-This is the PyTorch implementation of our ISICW MICCAI 2023 paper (**Continual-GEN: Continual Group Ensembling for Domain-agnostic Skin Lesion Classification**).
+This is the PyTorch implementation of our MICCAI ISICW 2023 paper (**Continual-GEN: Continual Group Ensembling for Domain-agnostic Skin Lesion Classification**).
 
-![](overview.png)
+## Abstract
+Designing deep learning (DL) models that adapt to new data without forgetting previously acquired knowledge is important in the medical field where data is generated daily, posing a challenge for model adaptation and knowledge retention. Continual learning (CL) enables models to learn continuously without forgetting, typically on a sequence of domains with known domain identities (e.g. source of data). In this work, we address a more challenging and practical CL scenario where
+information about the domain identity during training and inference is unavailable. We propose Continual-GEN, a novel forget-free, replay-free, and domain-agnostic subnetwork-based CL method for medical imaging with a focus on skin lesion classification. Continual-GEN proposes an ensemble of groups approach that decomposes the training data for each domain into groups of semantically similar clusters. Given two domains, Continual-GEN assesses the similarity between them based on the distance between their ensembles and assigns a separate subnetwork if the similarity score is low, otherwise updating the same subnetwork to learn both domains. At inference, Continual-GEN selects the best subnetwork using a distance-based metric for each test data, which is directly used for classification. Our quantitative experiments on four skin lesion datasets demonstrate the superiority of Continual-GEN over state-of-the-art CL methods, highlighting its potential for practical applications in medical imaging.
+
+<p align="center">
+  <img src="overview.jpg" width="700">
+</p>
 
 ## File description
 - baseline_training: Training algorithm of the cross-entropy baseline model.
