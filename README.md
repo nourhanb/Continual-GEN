@@ -1,5 +1,5 @@
 # Continual-GEN
-This is the PyTorch implementation of our MICCAI ISICW 2023 paper (**Continual-GEN: Continual Group Ensembling for Domain-agnostic Skin Lesion Classification**).
+This is the PyTorch implementation of paper (**Continual-GEN: Continual Group Ensembling for Domain-agnostic Skin Lesion Classification**), accepted at the ISIC workshop @ MICCAI 2023.
 
 ## Abstract
 Designing deep learning (DL) models that adapt to new data without forgetting previously acquired knowledge is important in the medical field where data is generated daily, posing a challenge for model adaptation and knowledge retention. Continual learning (CL) enables models to learn continuously without forgetting, typically on a sequence of domains with known domain identities (e.g. source of data). In this work, we address a more challenging and practical CL scenario where
